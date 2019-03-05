@@ -2,19 +2,20 @@ import React, { Component } from 'react';
 import Hello from "./components/Hello"
 import Name from "./components/Name"
 import TodoItem from "./components/TodoItem"
+import todosData from './components/todosData'
 import './App.css';
 
 class App extends Component {
   render() {
+
+    const todoItems = todosData.map(item => <TodoItem key={item.id} item={item} />)
+    
     return (
       <div className="App">
         <Hello />
         <Name name="Valentino" />
         <div className="todolist">
-          <TodoItem />
-          <TodoItem />
-          <TodoItem />
-          <TodoItem />
+           {todoItems}
         </div>
       </div>
     );
@@ -22,3 +23,8 @@ class App extends Component {
 }
 
 export default App;
+
+        /*<TodoItem />
+          <TodoItem />
+          <TodoItem />
+          <TodoItem />*/
