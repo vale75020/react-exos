@@ -12,7 +12,7 @@ export default class Hello extends Component {
 
       if(hours < 12) {
           timeOfDay = "Morning"
-          cssStyle.color="yellow"
+          cssStyle.color="lightblue"
       } else if (hours >= 12 && hours < 17) {
           timeOfDay = "Afternoon"
           cssStyle.color="red"
