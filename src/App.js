@@ -8,6 +8,8 @@ import "./App.css";
 import MyComponent from "./components/MyComponent";
 import EventComponent from "./components/EventComponent";
 import Counter from "./components/Counter";
+import LifeCycle from "./components/LifeCycle";
+import Loading from "./components/Loading";
 
 class App extends Component {
   constructor() {
@@ -47,6 +49,8 @@ class App extends Component {
         <div className="todolist">{todoItems}</div>
         <EventComponent />
         <Counter />
+        <LifeCycle />
+        <Loading />
         <Hello />
         <Name name="Valentino" />
       </div>
