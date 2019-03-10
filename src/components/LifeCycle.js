@@ -1,8 +1,10 @@
 import React from 'react'
 
 export default function LifeCycle() {
+
+ 
   return (
-    <div>
+    <div style={{backgroundColor:"red"}}>
         <h1>LifeCycle of a component</h1>
       <h2>componentDidMount()</h2>
       <h2>shouldComponentUpdate()</h2>

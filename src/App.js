@@ -10,6 +10,7 @@ import EventComponent from "./components/EventComponent";
 import Counter from "./components/Counter";
 import LifeCycle from "./components/LifeCycle";
 import Loading from "./components/Loading";
+import Phantom from "./components/Phantom";
 
 class App extends Component {
   constructor() {
@@ -23,18 +24,28 @@ class App extends Component {
   //   console.log("changed", id)
   // }
 
+  // handleChange = id => {
+  //   this.setState(prevState => {
+  //     const updatedTodos = prevState.todos.map(todo => {
+  //       if (todo.id === id) {
+  //         todo.completed = !todo.completed;
+  //       }
+  //       return todo;
+  //     });
+  //     return {
+  //       todos: updatedTodos
+  //     };
+  //   });
+  // };
+
   handleChange = id => {
-    this.setState(prevState => {
-      const updatedTodos = prevState.todos.map(todo => {
-        if (todo.id === id) {
-          todo.completed = !todo.completed;
-        }
-        return todo;
-      });
-      return {
-        todos: updatedTodos
-      };
+    let newTodos = this.state.todos.map(todo => {
+      if (todo.id === id) {
+        todo.completed = !todo.completed;
+      }
+      return todo;
     });
+    this.setState({ todos: newTodos });
   };
 
   render() {
@@ -51,6 +62,7 @@ class App extends Component {
         <Counter />
         <LifeCycle />
         <Loading />
+        <Phantom />
         <Hello />
         <Name name="Valentino" />
       </div>
