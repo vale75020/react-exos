@@ -11,6 +11,9 @@ import Counter from "./components/Counter";
 import LifeCycle from "./components/LifeCycle";
 import Loading from "./components/Loading";
 import Phantom from "./components/Phantom";
+import Message from './components/Message'
+import Conditional2 from './components/Conditional2'
+
 
 class App extends Component {
   constructor() {
@@ -62,7 +65,9 @@ class App extends Component {
         <Counter />
         <LifeCycle />
         <Loading />
+        <Message />
         <Phantom />
+        <Conditional2 />
         <Hello />
         <Name name="Valentino" />
       </div>
