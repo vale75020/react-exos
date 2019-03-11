@@ -13,6 +13,7 @@ import Loading from "./components/Loading";
 import Phantom from "./components/Phantom";
 import Message from './components/Message'
 import Conditional2 from './components/Conditional2'
+import Api from './components/Api'
 
 
 class App extends Component {
@@ -68,6 +69,7 @@ class App extends Component {
         <Message />
         <Phantom />
         <Conditional2 />
+        <Api />
         <Hello />
         <Name name="Valentino" />
       </div>
